@@ -10,6 +10,7 @@ Just add notification_center.gd to the autoload settings of your project
 Notifications are sent to observers. Any object can be an observer. Notifications can be sent from anywhere in your code.
 
 If you need to add an observer or send a notification, get the root object:
+
 `var nc = get_node("/root/nc") # if you named it nc in the autoload settings`
 
 ## To add an object as observer
@@ -33,6 +34,7 @@ you MUST remove an observer, at least when it leaves the scene. Example:
 
 ## To send a notification
 `nc.post_notification(notificationName,notificationData)`
+
  Every observer of notificationName will execute its action.
   
 You only need the notification_center.gd script.
