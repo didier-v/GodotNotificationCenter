@@ -2,8 +2,13 @@
 A notification center for [Godot Engine](https://github.com/okamstudio/godot)
 (version 1.1)
 
+
 # Installation
 Just add notification_center.gd to the autoload settings of your project
+
+You only need the notification_center.gd script.
+
+Check the demo project for more info.
 
 # Usage
 
@@ -22,23 +27,20 @@ If you need to add an observer or send a notification, get the root object:
   
   `func action(observer,notificationName,notificationData):`
   
-  * notificationData can any custom object sent with the notification
+  * notificationData can by of any type. You can make a dictionary and include every needed data in it. It is sent with the notification. 
   
 ## To remove an observer
- `remove_observer(observer, notificationName)`
+ `nc.remove_observer(observer, notificationName)`
 
 you MUST remove an observer, at least when it leaves the scene. Example: 
 
     func _exit_tree():
-        nc.remove_observer(observer,notificationName)
+        nc.remove_observer(self, notificationName)
 
 ## To send a notification
 `nc.post_notification(notificationName,notificationData)`
 
  Every observer of notificationName will execute its action.
   
-You only need the notification_center.gd script.
-Check the demo project for more info.
-
 # Licence
 MIT
