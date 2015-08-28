@@ -9,5 +9,8 @@ func _ready():
 
 
 func _on_Button_pressed():
-	var notificationData = "demo data" #  could be any type, even array or dict
+	var notificationData = { #  can be any type, even array or dict
+		"sender":self ,
+		"message":"hello"
+	}
 	nc.post_notification("DEMO_NOTIFICATION",notificationData)
