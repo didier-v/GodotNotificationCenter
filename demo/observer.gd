@@ -15,4 +15,4 @@ func _exit_tree():
 
 func handleNotification(observer,notificationName,notificationData):
 	set_text(notificationName)
-	get_node("data").set_text(notificationData)
+	get_node("data").set_text("sent by "+str(notificationData.sender)+", message: "+notificationData.message)
