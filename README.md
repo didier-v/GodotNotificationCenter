@@ -1,6 +1,6 @@
 # GodotNotificationCenter
 A notification center for [Godot Engine](https://github.com/okamstudio/godot)
-(version 1.1)
+(compatible with versions 1.1 and 2.0)
 
 
 # Installation
