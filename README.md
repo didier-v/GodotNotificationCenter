@@ -1,6 +1,8 @@
 # GodotNotificationCenter
 A notification center for [Godot Engine](https://github.com/okamstudio/godot)
+
 Compatible with Godot 3
+
 Check branch 2.0 for a project compatible with Godot 1.1 and 2.x
 
 # Installation
