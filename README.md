@@ -19,7 +19,9 @@ Notifications are sent to observers. Any object can be an observer. Notification
 If you need to add an observer or send a notification, get the root object:
 
 `var nc = get_node("/root/nc") # if you named it nc in the autoload settings`
+
 OR 
+
 `var nc = $"/root/nc" # new Godot 3 syntax`
 
 ## To add an object as observer
