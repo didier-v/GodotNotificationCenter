@@ -1,7 +1,7 @@
 # GodotNotificationCenter
 A notification center for [Godot Engine](https://github.com/okamstudio/godot)
-(compatible with versions 1.1 and 2.0)
-
+Compatible with Godot 3
+Check branch 2.0 for a project compatible with Godot 1.1 and 2.x
 
 # Installation
 Just add notification_center.gd to the autoload settings of your project

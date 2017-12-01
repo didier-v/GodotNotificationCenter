@@ -1,18 +1,15 @@
 
-extends Node
+extends Label
 
 var nc
 
-
 func _ready():
-	nc = get_node("/root/nc")
+	nc = $"/root/nc"
 	nc.add_observer(self, "DEMO_NOTIFICATION","handleNotification")
-
 
 func _exit_tree():
 	nc.remove_observer(self,"DEMO_NOTIFICATION")
 
-
 func handleNotification(observer,notificationName,notificationData):
-	set_text(notificationName)
-	get_node("data").set_text("sent by "+str(notificationData.sender)+", message: "+notificationData.message)
+	text = notificationName
+	$"data".text = "sent by "+str(notificationData.sender)+", message: "+notificationData.message

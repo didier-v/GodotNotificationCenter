@@ -1,0 +1,33 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=3
+
+[application]
+
+run/main_scene="res://demo/demo.tscn"
+icon="icon.png"
+main_scene="res://demo/demo.tscn"
+name="NotificationCenter"
+
+[autoload]
+
+nc="res://notification_center.gd"
+
+[display]
+
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+stretch/aspect="keep"
+stretch/mode="2d"
+window/height=600
+window/width=800
+
+[gdnative]
+
+singletons=[  ]
