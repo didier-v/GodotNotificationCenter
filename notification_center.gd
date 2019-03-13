@@ -4,7 +4,7 @@ var notifications
 
 func _ready():
 	notifications = {};
-	
+
 func post_notification(notificationName,notificationData):
 	if notifications.has(notificationName):
 		var currentObservers=notifications[notificationName].observers
